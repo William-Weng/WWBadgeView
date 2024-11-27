@@ -3,7 +3,7 @@
 
 ## [Introduction - 簡介](https://swiftpackageindex.com/William-Weng)
 - [A simple badge controller that can simply display the numbers on the badge.](https://developer.apple.com/documentation/uikit/uiapplication/1622918-applicationiconbadgenumber)
-- [將NSCache功能變的更簡單使用。](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/setbadgecount&lt;_:withcompletionhandler:&gt;)
+- [一個簡單的badge控制器，可以簡單地顯示在badge上的數字。](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/setbadgecount&lt;_:withcompletionhandler:&gt;)
 
 ![](./Example.png)
 
