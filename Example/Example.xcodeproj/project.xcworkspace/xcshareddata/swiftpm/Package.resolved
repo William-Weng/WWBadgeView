@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "wwbadgeview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWBadgeView",
+      "state" : {
+        "revision" : "475f91da83c879f35e334e2264ca9935d74868a0",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

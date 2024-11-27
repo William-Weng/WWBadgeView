@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nvk-hW-CXA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WWBadgeView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-LE-E3S">
+                                <rect key="frame" x="152" y="320" width="110" height="256"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8x-T4-YsH">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="78.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cl-PA-6v0" customClass="MyBadgeView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="23.5" y="8" width="63" height="62.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7cl-PA-6v0" secondAttribute="height" id="Kea-uo-OsJ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                        <integer key="value" value="999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7cl-PA-6v0" firstAttribute="top" secondItem="A8x-T4-YsH" secondAttribute="top" constant="8" id="2uS-c3-3of"/>
+                                            <constraint firstItem="7cl-PA-6v0" firstAttribute="centerY" secondItem="A8x-T4-YsH" secondAttribute="centerY" id="92I-62-MhX"/>
+                                            <constraint firstItem="7cl-PA-6v0" firstAttribute="centerX" secondItem="A8x-T4-YsH" secondAttribute="centerX" id="Hl5-Qv-Zhr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-uB-RBO">
+                                        <rect key="frame" x="0.0" y="88.5" width="110" height="79"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47h-uQ-XB8" customClass="MyBadgeView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="23.5" y="8" width="63" height="63"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="47h-uQ-XB8" secondAttribute="height" id="yIO-vB-c2V"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="47h-uQ-XB8" firstAttribute="centerX" secondItem="3gF-uB-RBO" secondAttribute="centerX" id="ZaZ-ou-Yti"/>
+                                            <constraint firstItem="47h-uQ-XB8" firstAttribute="top" secondItem="3gF-uB-RBO" secondAttribute="top" constant="8" id="l4l-hM-Elc"/>
+                                            <constraint firstItem="47h-uQ-XB8" firstAttribute="centerY" secondItem="3gF-uB-RBO" secondAttribute="centerY" id="weI-9k-NnF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLX-Cy-dnn">
+                                        <rect key="frame" x="0.0" y="177.5" width="110" height="78.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQd-hO-49I" customClass="MyBadgeView" customModule="Example" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="14" width="94" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="WQd-hO-49I" secondAttribute="height" multiplier="15:8" id="Ro2-ez-xj6"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="WQd-hO-49I" firstAttribute="centerX" secondItem="PLX-Cy-dnn" secondAttribute="centerX" id="Pqb-fl-MKl"/>
+                                            <constraint firstItem="WQd-hO-49I" firstAttribute="centerY" secondItem="PLX-Cy-dnn" secondAttribute="centerY" id="Ywc-Pz-fl6"/>
+                                            <constraint firstItem="WQd-hO-49I" firstAttribute="leading" secondItem="PLX-Cy-dnn" secondAttribute="leading" constant="8" id="dz8-6K-TAX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="4Fk-hg-Jpl"/>
+                                    <constraint firstAttribute="height" constant="256" id="pPm-9p-Jt0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Kwu-LE-E3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ldj-ir-253"/>
+                            <constraint firstItem="Kwu-LE-E3S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LoC-D1-RiU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="WWBadgeView" id="ASc-YT-plj">
+                        <barButtonItem key="rightBarButtonItem" title="Value" id="2oB-CV-Rnr">
+                            <connections>
+                                <action selector="valueSetting:" destination="BYZ-38-t0r" id="8Nd-2l-qIh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myBadgeView1" destination="7cl-PA-6v0" id="VLg-jH-JlH"/>
+                        <outlet property="myBadgeView2" destination="47h-uQ-XB8" id="eRM-8x-zWW"/>
+                        <outlet property="myBadgeView3" destination="WQd-hO-49I" id="dnv-91-Swr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049.2753623188407" y="-2.0089285714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FxA-hc-fVT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nvk-hW-CXA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3XH-xz-86A">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oKz-bV-1Az"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IiD-PU-G8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="-2.0089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
